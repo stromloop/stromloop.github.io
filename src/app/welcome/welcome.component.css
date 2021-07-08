@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Overpass:wght@600&display=swap');
+
+body{
+    background: #0f4c75;
+    /* background: #0f4c75; */
+    overflow: hidden;
+}
+section{
+    /* display: flex; */
+    justify-content: center;
+
+}
+section::before{
+    content: '';
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: circle(64% at 79% -75%);
+    background: rgba(255, 255, 255, 0.05);
+}
+section::after{
+    content: '';
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: circle(15% at 1% -5%);
+    background: rgba(255, 255, 255, 0.05);
+}
+.header {
+    box-sizing: border-box;
+    padding: 2.2% 5.2%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    }
+    .header span{ 
+    font-weight: 200;
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+    .subheader{
+        text-align: right;
+        flex: 1;
+    }
+    .subheader ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 19px;
+        position: relative;
+    }
+    .subheader ul li a{
+        text-decoration: none;
+        color: #b8dff9;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+  nav  .close{
+        display: none;
+    }
+    nav .menu{
+        display: none;
+    }
+    .wave{
+        position: absolute;
+        bottom: 0;
+    }
+    .mediaicons{
+        position: absolute;
+        width: 20px;
+        height: 100vh;
+        top: 40%;
+        left: 2%;
+        cursor: pointer;
+        /* margin-top: 10px; */
+    }
+    .container{
+        position: absolute;
+        text-align: center;
+        width: 600px;
+        height: 100%;
+        top: 40%;
+        right: 7%;
+        color: #fff;
+        word-spacing: 2px;
+        line-height: 1.2;
+    }
+    
+      .explore{
+          background: linear-gradient(#4882a8 , #0f4c75);        
+          border-radius: 20px;
+          color: #fff;
+          padding: 8px 24px;
+         box-sizing: border-box;
+         text-decoration: none;
+         font-family: none;
+         font-weight: bold;
+        box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        }
+
+
+
+    .subheader ul li a::after{
+        content: '';
+        width: 0%;
+        height: 2.1px;
+        background: #3181b8;
+        display: block;
+        margin: auto;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .subheader ul li a:hover::after{
+        width: 100%;
+    }
+    @media only screen and (max-width : 186px) {
+        /* .header{
+            position: absolute;
+            font-size: 1em;
+        } */
+        /* .header span{
+            padding-top: 35px;
+        } */
+    nav .menu{
+            display:block;
+           color: #fff;
+           margin: 10px;
+           font-size: 22px;
+           cursor: pointer;
+           position: relative;
+           background-color: none;
+           background: none;
+           border: none;
+
+        }
+       nav .close{
+           display:block;
+           color: #fff;
+           margin: 10px;
+           font-size: 22px;
+           cursor: pointer;
+           position: relative;
+           background-color: none;
+           background: none;
+           border: none;
+
+       }
+       .subheader ul li {
+           display: block;
+       }
+       .subheader{
+           top: 0;
+           right: -200px;
+           width: 200px;
+           height: 100vh;
+            background: red;
+            position: absolute;
+            z-index: 2;
+            text-align: left;
+       }
+    }
+
+                                /* /* 2Nd Page */ 
+
+.secondpage{
+    background:#b8dff9;
+width: 100%;
+height: 100vh;
+}
+.secondpage h2{
+    /* margin-top: 10%; */
+    position: absolute;
+    margin-top: 2%;
+    width: 100%;
+    color: #3181b8;
+    text-align: center;
+    font-size: 3em;
+    font-family:'Overpass', sans-serif ;
+}
+ .what::before{
+    content: '';    
+    position: absolute;
+  bottom: -15px;
+  width: 200px;
+  height: 4px;
+  background: #3181b8;
+}
