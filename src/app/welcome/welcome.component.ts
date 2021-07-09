@@ -1,4 +1,4 @@
-import { Component, OnInit,Renderer2 } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
@@ -7,17 +7,13 @@ import { Component, OnInit,Renderer2 } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  showFiller = true;
+@Input()deviceXs!:boolean;
+@Input()deviceSm!:boolean;
 
-  constructor(private render :Renderer2) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-    var subheader = document.getElementById("subheader")
-
-  }
-  hidemenu(){
-  }
-  showmenu(){
 
   }
   scroll()
