@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { FlexLayoutModule, MediaChange,MediaObserver } from "@angular/flex-layout";
+
 
 @Component({
   selector: 'app-welcome',
@@ -11,11 +14,22 @@ export class WelcomeComponent implements OnInit {
 @Input()deviceSm!:boolean;
 
 
-  constructor() { }
+mediaSub!: Subscription;
 
-  ngOnInit(): void {
+constructor(public mediaObserver:MediaObserver){
 
-  }
+}
+ngOnInit(){
+   this.mediaSub=this.mediaObserver.media$.subscribe((result:MediaChange)=>{
+     console.log(result.mqAlias);
+     this.deviceXs=result.mqAlias ==='xs' ? true:false;
+     this.deviceSm=result.mqAlias === 'sm' ? true:false;
+  })
+}
+
+ngOnDestroy(){
+  this.mediaSub.unsubscribe();
+}
   scroll()
   {document.querySelector('#home')?.scrollIntoView({behavior:'smooth',block:'center'})}
 
