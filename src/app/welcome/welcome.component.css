@@ -110,9 +110,9 @@ section::after{
         color: #fff;
         word-spacing: 2px;
         line-height: 1.2;
-        animation: dropIn 2.5s ease-in-out;
+        /* animation: dropIn 2.5s ease-in-out; */
     }
-    @keyframes dropIn {
+    /* @keyframes dropIn {
         from{opacity: 0;
         transform: translateY(-10%);
     }
@@ -121,7 +121,7 @@ section::after{
         opacity: 1;
         transform: translateY(0);
     }
-    }
+    } */
       .explore{
           background: linear-gradient(#4882a8 , #0f4c75);        
           border-radius: 20px;
@@ -156,7 +156,7 @@ height: 100vh;
     z-index: 2;
     
 }
-.what{
+/* .what{
     animation: dropIn 3s ease backwards;
 }
 @keyframes dropIn {
@@ -164,7 +164,7 @@ height: 100vh;
         transform: translateX(-10%);}
         to{opacity: 1;
         transform: translateX(0);}
-}
+} */
  .what::after{
     content: '';    
     margin: auto;
@@ -205,7 +205,7 @@ height: 100vh;
     flex-wrap: wrap;
     background: #b8dff9;
 }
-.card:hover{    
+/* .card:hover{    
     animation: dropIn 2s ease-in-out ;
 }
 @keyframes dropIn
@@ -214,7 +214,7 @@ height: 100vh;
     transform: translateY(8%);}
     to{opacity: 1;
     transform: translateY(0);}
-}
+} */
 
 .matcontainer .card{
     position: relative;

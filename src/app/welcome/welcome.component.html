@@ -73,7 +73,8 @@
         <div *ngIf="!deviceSm && !deviceXs" class="header">
             <span>STROMLOOP</span>
             <nav>
-                <div class="subheader">
+                <div class="subheader" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000"
+                data-aos-easing="ease-in-sine">
                     <ul>
                         <li><a class="home" (click)="scroll()">HOME</a></li>
                         <li><a id="work">OUR WORK</a></li>
@@ -112,14 +113,16 @@
 
 
 
-
+                           <!-- For Laptop Devices -->
         
         <div *ngIf="!deviceSm && !deviceXs" class="mediaicons">
             <img src="assets/linkedin-brands.svg">
             <img src="assets/facebook-square-brands.svg" style="margin-top: 25px;">
             <img src="assets/instagram-brands.svg" style="margin-top: 25px;">
         </div>
-        <div *ngIf="!deviceSm && !deviceXs" class="container">
+        <div *ngIf="!deviceSm && !deviceXs" class="container" data-aos="fade-up-right"
+        data-aos-duration="2000"
+        data-aos-offset="403">
             <h2 style="font-family: 'Courier New', Courier, monospace;">
                 "If you think that the Internet has changed your life,
                 Think Again. The Internet of Things is bout to change it all over again"</h2>
@@ -296,12 +299,17 @@ opacity: 0.8;">
 </div>
 
 
+                             <!-- For Laptop sizes -->
 
 
 <div id="home" *ngIf="!deviceXs && !deviceSm" class="secondpage">
-    <h2 class="what">What We Know</h2>
+    <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-offset="80"
+     class="what">What We Know</h2>
     <div class="matcontainer">
-        <div class="card">
+        <div class="card" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000">
             <svg xmlns="http://www.w3.org/2000/svg" width="65.898" style="margin-top: -20px;" height="87.037" viewBox="0 0 95.898 87.037">
                 <defs>
                   <style>
@@ -345,7 +353,9 @@ opacity: 0.8;">
             </p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="zoom-out" data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+        data-aos-offset="300">
             <div style="display: block;
             margin-top:-17px ;">
                 <svg class="automation" xmlns="http://www.w3.org/2000/svg" style="width: 70px;" fill="#b7ddf7" viewBox="0 0 16 16">
@@ -399,7 +409,10 @@ opacity: 0.8;">
             </p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-left"
+        data-aos-easing="ease-in-sine"
+        data-aos-offset="300"
+        data-aos-duration="1000">
             <!-- <img class="ui" src="assets/uiux.svg" style="margin-top: -10px;" width="25%" > -->
             <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: -20px;" width="69.686" height="82.037" viewBox="0 0 101.686 82.037">
                 <defs>

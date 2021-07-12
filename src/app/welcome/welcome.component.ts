@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FlexLayoutModule, MediaChange,MediaObserver } from "@angular/flex-layout";
-
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-welcome',
@@ -20,6 +20,8 @@ constructor(public mediaObserver:MediaObserver){
 
 }
 ngOnInit(){
+  AOS.init();
+
    this.mediaSub=this.mediaObserver.media$.subscribe((result:MediaChange)=>{
      console.log(result.mqAlias);
      this.deviceXs=result.mqAlias ==='xs' ? true:false;
