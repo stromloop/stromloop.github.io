@@ -12,7 +12,9 @@ export class WelcomeComponent implements OnInit {
 
 @Input()deviceXs!:boolean;
 @Input()deviceSm!:boolean;
-
+@Input()deviceMd!:boolean;
+@Input()deviceLg!:boolean;
+@Input()deviceXl!:boolean;
 
 mediaSub!: Subscription;
 
@@ -26,6 +28,11 @@ ngOnInit(){
      console.log(result.mqAlias);
      this.deviceXs=result.mqAlias ==='xs' ? true:false;
      this.deviceSm=result.mqAlias === 'sm' ? true:false;
+     this.deviceMd=result.mqAlias === 'md' ? true:false;
+     this.deviceLg=result.mqAlias === 'lg' ? true:false;
+     this.deviceXl=result.mqAlias === 'xl' ? true:false;
+
+
   })
 }
 

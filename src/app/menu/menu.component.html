@@ -1,6 +1,4 @@
-<!-- <p>menu works!</p> -->
-
-<body>
+<body *ngIf="deviceXs">
     <section>
         <div class="logo">
             <span>
@@ -23,6 +21,36 @@
                 <li><a>ABOUT</a></li>
                 <li><a>BLOG</a></li>
                 <li><a>CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+                                <!-- For Sm Devices -->
+
+<body *ngIf="deviceSm">
+    <section>
+        <div class="logo">
+            <span>
+                STROMLOOP
+            </span>
+            <div>
+                <button class="close">
+                    <mat-icon routerLink="/welcome">
+                        close
+                    </mat-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+    <nav>
+        <div class="content" style="margin-top: 30%;">
+            <ul>
+                <li style="padding: 2%;"><a routerLink="/welcome"> HOME</a></li>
+                <li style="padding: 2%;"><a>OUR WORK</a></li>
+                <li style="padding: 2%;"><a>ABOUT</a></li>
+                <li style="padding: 2%;"><a>BLOG</a></li>
+                <li style="padding: 2%;"><a>CONTACT</a></li>
             </ul>
         </div>
     </nav>

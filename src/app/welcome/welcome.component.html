@@ -19,7 +19,7 @@
                 color: white;
                 border: none;
                 font-size: 30px;">
-                    <mat-icon style="font-size: 40px;">
+                    <mat-icon style="font-size: 1.2em;">
                         menu
                     </mat-icon>
                 </button>
@@ -70,16 +70,18 @@
             </div>
         </div>
 
+
+                               <!-- For Laptop Devices -->
+
         <div *ngIf="!deviceSm && !deviceXs" class="header">
             <span>STROMLOOP</span>
             <nav>
                 <div class="subheader" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000"
                 data-aos-easing="ease-in-sine">
                     <ul>
-                        <li><a class="home" (click)="scroll()">HOME</a></li>
+                        <li><a class="home">HOME</a></li>
                         <li><a id="work">OUR WORK</a></li>
                         <li><a id="about">ABOUT</a></li>
-                        <li><a id="shop">SHOP</a></li>
                         <li><a id="blog">BLOG</a></li>
                         <button style="background-color: none;
                         border: none;
@@ -122,7 +124,7 @@
         </div>
         <div *ngIf="!deviceSm && !deviceXs" class="container" data-aos="fade-up-right"
         data-aos-duration="2000"
-        data-aos-offset="403">
+        data-aos-offset="303">
             <h2 style="font-family: 'Courier New', Courier, monospace;">
                 "If you think that the Internet has changed your life,
                 Think Again. The Internet of Things is bout to change it all over again"</h2>
