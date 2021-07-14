@@ -95,17 +95,20 @@ section::after{
     .secmediaicons{
 
     position: absolute;
-    top: 950px;
-    width: 20px;
+    top: 140%;
+    width: 1.5%;
+    text-align: center;
+    justify-content: center;
+    /* height: 100vh; */
     left: 2%;
     cursor: pointer;
     }
     .container{
         position: absolute;
         text-align: center;
-        width: 600px;
-        height: 100%;
-        top: 40%;
+        width: 45%;
+        height: 26%;
+        top: 35%;
         right: 7%;
         color: #fff;
         word-spacing: 2px;
@@ -169,9 +172,9 @@ height: 100vh;
     content: '';    
     margin: auto;
     display: block;
-    margin-top: 10px;
+    margin-top: 0.5%;
     opacity: 0.6;
-    width: 150px;
+    width: 11%;
     height: 4px;
     background: #3181b8;
 }
@@ -217,8 +220,8 @@ height: 100vh;
 
 .matcontainer .card{
     position: relative;
-    width: 270px;
-    height: 340px;
+    width: 20%;
+    height: 50vh;
     margin-top: 12%;
     margin-left: 4%;
     box-shadow: inset 6px 6px 10px rgba(31, 30, 30, 0.5);

@@ -40,6 +40,8 @@ ngOnDestroy(){
   this.mediaSub.unsubscribe();
 }
   scroll()
-  {document.querySelector('#home')?.scrollIntoView({behavior:'smooth',block:'center'})}
+  {
+    document.querySelector('#home')?.scrollIntoView({behavior:'smooth',block:'center'})
+  }
 
 }

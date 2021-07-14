@@ -32,7 +32,7 @@
             <h2 style="font-family: 'Courier New', Courier, monospace;
             color: white;">
                 "If you think that the Internet has changed your life,
-                Think Again. The Internet of Things is bout to change it all over again"</h2>
+                Think Again. The Internet of Things is about to change it all over again"</h2>
             <a style="top:50px;" (click)="scroll()" class="explore">Explore</a>
         </div>
 
@@ -83,12 +83,12 @@
                         <li><a id="work">OUR WORK</a></li>
                         <li><a id="about">ABOUT</a></li>
                         <li><a id="blog">BLOG</a></li>
-                        <button style="background-color: none;
+                        <!-- <button style="background-color: none;
                         border: none;
                         background: none;
                         padding: 10px;">
                             <img src="assets/profile.png" width="53.82%" height="53.82%">
-                        </button>
+                        </button> -->
                     </ul>
                 </div>
             </nav>
@@ -100,7 +100,7 @@
             <h2 style="font-family: 'Courier New', Courier, monospace;
             color: white;">
                 "If you think that the Internet has changed your life,
-                Think Again. The Internet of Things is bout to change it all over again"</h2>
+                Think Again. The Internet of Things is about to change it all over again"</h2>
             <a (click)="scroll()" class="explore">Explore</a>
         </div>
 
@@ -125,10 +125,11 @@
         <div *ngIf="!deviceSm && !deviceXs" class="container" data-aos="fade-up-right"
         data-aos-duration="2000"
         data-aos-offset="303">
-            <h2 style="font-family: 'Courier New', Courier, monospace;">
+            <h2 style="font-family: 'Courier New', Courier, monospace; ">
                 "If you think that the Internet has changed your life,
-                Think Again. The Internet of Things is bout to change it all over again"</h2>
-            <a (click)="scroll()" class="explore">Explore</a>
+                Think Again. The Internet of Things is about to change it all over again"</h2>
+                <a class="explore"  style="cursor: pointer;
+                z-index: 10;" (click)="scroll()">Explore</a>
         </div>
         <svg *ngIf="!deviceSm && !deviceXs" class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 280">
             <path fill="#b8dff9" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,133.3C384,117,480,139,576,176C672,213,
@@ -312,7 +313,8 @@ opacity: 0.8;">
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
         data-aos-duration="1000">
-            <svg xmlns="http://www.w3.org/2000/svg" width="65.898" style="margin-top: -20px;" height="87.037" viewBox="0 0 95.898 87.037">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65.898" style="margin-top: -10%;"
+             height="87.037" viewBox="0 0 95.898 87.037">
                 <defs>
                   <style>
                     .cls-1 {
@@ -338,14 +340,14 @@ opacity: 0.8;">
                 </g>
               </svg>
               
-            <h2 style="font-size: 1.5em;
+            <h2 style="font-size: 1.4em;
             color: #0a446b;
             text-align: top;
-            margin-top: -55px;">Web & App Development</h2>
+            margin-top: -20%;">Web & App Development</h2>
             <p style="text-align: justify;
-            margin-left: 23px;
-            margin-right: 36px;
-            margin-top: 40px;
+            margin-left: 8%;
+            margin-right: 13%;
+            margin-top: 14%;
             color: #fff;
             line-height: 1.6;
             font-size: 1em;
@@ -359,7 +361,7 @@ opacity: 0.8;">
         data-aos-easing="ease-in-sine"
         data-aos-offset="300">
             <div style="display: block;
-            margin-top:-17px ;">
+            margin-top:-10% ;">
                 <svg class="automation" xmlns="http://www.w3.org/2000/svg" style="width: 70px;" fill="#b7ddf7" viewBox="0 0 16 16">
                     <path
                         d="M 11.5 0 L 11.5 1.0449219 C 11.046729 1.1222258 10.633025 1.3084149 
@@ -396,11 +398,11 @@ opacity: 0.8;">
             font-weight:bold;
             color:#0a446b;
             text-align: top;
-            margin-top: -55px;">IoT And Automation</h2>
+            margin-top: -20%;">IoT And Automation</h2>
             <p style="text-align: justify;
-            margin-left: 35px;
-            margin-right: 36px;
-            margin-top: 52px;
+            margin-left: 13%;
+            margin-right: 13%;
+            margin-top: 15%;
             color: #fff;
             line-height: 1.6;
             font-size: 1em;
@@ -416,7 +418,7 @@ opacity: 0.8;">
         data-aos-offset="300"
         data-aos-duration="1000">
             <!-- <img class="ui" src="assets/uiux.svg" style="margin-top: -10px;" width="25%" > -->
-            <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: -20px;" width="69.686" height="82.037" viewBox="0 0 101.686 82.037">
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: -10%;" width="69.686" height="82.037" viewBox="0 0 101.686 82.037">
                 <defs>
                   <style>
                     .cls-1 {
@@ -436,11 +438,11 @@ opacity: 0.8;">
             <h2 style="font-size: 1.5em;
             color: #0a446b;
             text-align: top;
-            margin-top: -55px;">UI & UX Development</h2>
+            margin-top: -20%;">UI & UX Development</h2>
             <p style="text-align: justify;
-            margin-left: 35px;
-            margin-right: 36px;
-            margin-top: 40px;
+            margin-left: 12%;
+            margin-right: 12%;
+            margin-top: 14%;
             color: #fff;
             line-height: 1.6;
             font-size: 1em;
